@@ -12,7 +12,11 @@ import image4 from "../../assets/townhouses.jfif";
 
 export default function Slider() {
   return (
-    <div className=" absolute top-[15rem] left-[11rem] w-3/4 border-white overflow-hidden">
+    <div className="w-3/4  my-16 ml-[180px] overflow-hidden">
+      <div className="mb-5 flex gap-2 flex-col items-start justify-start h-full w-full ">
+        <h2 className="text-3xl text-black ">Our Recent Project</h2>
+        <p className=" text-black">APARTMENT | STUDENT HOUSING | TWONHOUSES</p>
+      </div>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
