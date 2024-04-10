@@ -32,10 +32,13 @@ export default function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <a>Update Profile</a>
+              <Link to="/updateprofile">Update Profile</Link>
             </li>
             <li>
-              <a>About us</a>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/aboutus">About us</Link>
             </li>
           </ul>
         </div>
@@ -49,10 +52,13 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <a>Update Profile</a>
+            <Link to="/updateprofile">Update Profile</Link>
           </li>
           <li>
-            <a>About us</a>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/aboutus">About us</Link>
           </li>
         </ul>
       </div>
