@@ -7,6 +7,7 @@ import Root from "./Layout/Root";
 import Hoom from "./Pages/Home/Hoom";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
+import EstateDetails from "./Pages/Shared/EstateDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Hoom />,
+        loader: () => fetch("/estate.json"),
       },
       {
         path: "/login",
@@ -23,6 +25,11 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/estatedetails/:id",
+        element: <EstateDetails />,
+        loader: () => fetch("/estate.json"),
       },
     ],
   },
