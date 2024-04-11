@@ -5,8 +5,8 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 export default function Navbar() {
   const { user, signOutUser } = useContext(AuthContext);
   // console.log(user);
-  // const { photoURL, displayName } = user;
-  // console.log(photoURL, displayName);
+  const { photoURL, displayName } = user;
+  console.log(photoURL, displayName);
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -75,9 +75,10 @@ export default function Navbar() {
       <div className="navbar-end">
         {user ? (
           <div className="flex gap-5 items-center justify-center">
-            <div className="w-10 rounded-full">
+            {displayName}
+            <div className="w-10 h-10  overflow-hidden rounded-full">
               <img
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
                 src={user?.photoURL || "https://i.ibb.co/HGCGmV3/OIP.jpg"}
               />
             </div>

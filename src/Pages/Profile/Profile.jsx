@@ -4,11 +4,10 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Profile() {
   const { user } = useContext(AuthContext);
-  console.log(user);
   const { email, displayName, photoURL } = user;
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h2 className="text-3xl text-black">Profile</h2>
+    <div className="flex flex-col items-center justify-center my-10">
+      <h2 className="text-3xl text-black">Profile Information</h2>
 
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
