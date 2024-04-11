@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 
@@ -15,9 +17,19 @@ export default function Login() {
   const onSubmit = (data) => {
     const { email, password } = data;
 
-    loginUser(email, password).then((result) => {
-      console.log(result.user);
-    });
+    loginUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Login Successfully!", {
+          position: "top-center",
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("Can't Login!", {
+          position: "top-center",
+        });
+      });
   };
   return (
     <>
@@ -66,6 +78,7 @@ export default function Login() {
             <SocialLogin />
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   );

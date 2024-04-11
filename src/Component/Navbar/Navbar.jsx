@@ -4,6 +4,9 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Navbar() {
   const { user, signOutUser } = useContext(AuthContext);
+  // console.log(user);
+  // const { photoURL, displayName } = user;
+  // console.log(photoURL, displayName);
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -32,10 +35,13 @@ export default function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
               <Link to="/updateprofile">Update Profile</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/profile">Profile</Link>
             </li>
             <li>
               <Link to="/contact">Ccontact</Link>
@@ -52,36 +58,35 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
             <Link to="/updateprofile">Update Profile</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/profile">Profile</Link>
           </li>
           <li>
             <Link to="/contact">Ccontact</Link>
           </li>
         </ul>
       </div>
+
       <div className="navbar-end">
         {user ? (
-          <div className=" ">
-            <label
-              tabIndex={0}
-              className="avatar  flex items-center justify-between w-[170px] h-[50px]"
+          <div className="flex gap-5 items-center justify-center">
+            <div className="w-10 rounded-full">
+              <img
+                className="w-full h-full object-contain"
+                src={user?.photoURL || "https://i.ibb.co/HGCGmV3/OIP.jpg"}
+              />
+            </div>
+            <button
+              onClick={signOutUser}
+              className="btn btn-sm border border-gray-500 btn-ghost"
             >
-              <div className="w-10 rounded-full">
-                <img
-                  className="w-full h-full object-contain"
-                  src={user?.photoURL || "https://i.ibb.co/HGCGmV3/OIP.jpg"}
-                />
-              </div>
-              <button
-                onClick={signOutUser}
-                className="btn btn-sm border border-red-600 btn-ghost"
-              >
-                Logout
-              </button>
-            </label>
+              Logout
+            </button>
           </div>
         ) : (
           <Link to="/login">

@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Register() {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateYourProfile } = useContext(AuthContext);
 
   const {
     register,
@@ -12,13 +14,30 @@ export default function Register() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    const { email, password } = data;
+    const { email, password, fullName, imageurl } = data;
+    // console.log(fullName, imageurl);
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        toast.success("Register Successfully!", {
+          position: "top-center",
+        });
+        updateYourProfile(result.user, {
+          displayName: fullName,
+          photoURL: imageurl,
+        })
+          .then(() => {
+            console.log("profile updated");
+          })
+          .catch(() => {
+            console.log(`can't update profile!!`);
+          });
       })
       .catch((error) => {
         console.error(error);
+        toast.error("Can't Register!", {
+          position: "top-center",
+        });
       });
   };
   return (
@@ -40,7 +59,9 @@ export default function Register() {
                   className="input input-bordered"
                   {...register("fullName", { required: true })}
                 />
-                {errors.fullName && <span>This field is required</span>}
+                {errors.fullName && (
+                  <span className="text-red-500">This field is required</span>
+                )}
               </div>
               <div className="form-control">
                 <label className="label">
@@ -52,7 +73,9 @@ export default function Register() {
                   className="input input-bordered"
                   {...register("email", { required: true })}
                 />
-                {errors.email && <span>This field is required</span>}
+                {errors.email && (
+                  <span className="text-red-500">This field is required</span>
+                )}
               </div>
               <div className="form-control">
                 <label className="label">
@@ -62,6 +85,7 @@ export default function Register() {
                   type="text"
                   placeholder="image url"
                   className="input input-bordered"
+                  {...register("imageurl", { required: true })}
                 />
               </div>
               <div className="form-control">
@@ -74,7 +98,9 @@ export default function Register() {
                   className="input input-bordered"
                   {...register("password", { required: true })}
                 />
-                {errors.password && <span>This field is required</span>}
+                {errors.password && (
+                  <span className="text-red-500">This field is required</span>
+                )}
               </div>
               <div className="form-control mt-6 p-0">
                 <button className="btn btn-neutral">Register</button>
@@ -88,6 +114,7 @@ export default function Register() {
             </div>
           </form>
         </div>
+        <ToastContainer />
       </div>
     </>
   );

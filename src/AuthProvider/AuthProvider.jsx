@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
@@ -52,13 +53,17 @@ export default function AuthProvider({ children }) {
   const githubLogin = () => {
     signInWithPopup(auth, githubProvider);
   };
-
+  // UPDATE PROFILE //
+  const updateYourProfile = (res, { displayName, photoURL }) => {
+    updateProfile(res, { displayName, photoURL });
+  };
   const allValues = {
     createUser,
     loginUser,
     signOutUser,
     googleLogin,
     githubLogin,
+    updateYourProfile,
     user,
   };
   return (

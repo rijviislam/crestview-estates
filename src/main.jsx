@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Hoom from "./Pages/Home/Hoom";
 import Login from "./Pages/Login/Login";
+import Profile from "./Pages/Profile/Profile";
 import Projects from "./Pages/Projects/Projects";
 import Register from "./Pages/Register/Register";
 import EstateDetails from "./Pages/Shared/EstateDetails";
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/updateprofile",
         element: <UpdateProfile />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
       {
         path: "/contact",

@@ -1,4 +1,7 @@
 export default function UpdateProfile() {
+  // const { user } = useContext(AuthContext);
+  // console.log(user);
+  // const { displayName, photoURL, email } = user;
   return (
     <div className="flex flex-col gap-3 mt-5 items-center">
       <h2 className="text-3xl text-black">Update your profile!</h2>
@@ -13,6 +16,7 @@ export default function UpdateProfile() {
                 <input
                   type="text"
                   placeholder="name"
+                  // value={displayName}
                   className="input input-bordered"
                 />
               </div>
@@ -23,6 +27,7 @@ export default function UpdateProfile() {
                 <input
                   type="text"
                   placeholder="email"
+                  // value={email}
                   className="input input-bordered"
                 />
               </div>
@@ -33,6 +38,7 @@ export default function UpdateProfile() {
                 <input
                   type="text"
                   placeholder="image url"
+                  // value={photoURL}
                   className="input input-bordered"
                 />
               </div>
