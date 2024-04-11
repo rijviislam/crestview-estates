@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthProvider from "./AuthProvider/AuthProvider";
 import "./index.css";
 import Root from "./Layout/Root";
-import AboutUs from "./Pages/AboutUs/AboutUs";
+import Contact from "./Pages/Contact/Contact";
 import ErrorPage from "./Pages/ErrorPage/ErrorPage";
 import Hoom from "./Pages/Home/Hoom";
 import Login from "./Pages/Login/Login";
@@ -47,8 +47,8 @@ const router = createBrowserRouter([
         element: <UpdateProfile />,
       },
       {
-        path: "/aboutus",
-        element: <AboutUs />,
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
