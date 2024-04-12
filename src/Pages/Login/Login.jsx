@@ -1,15 +1,16 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 
 export default function Login() {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, user } = useContext(AuthContext);
   const navigate = useNavigate();
-
+  const location = useLocation();
+  console.log(location);
   const {
     register,
     handleSubmit,
@@ -25,7 +26,6 @@ export default function Login() {
           position: "top-center",
         });
         reset();
-        navigate("/");
       })
       .catch(() => {
         toast.error("Can't Login!", {
@@ -33,6 +33,11 @@ export default function Login() {
         });
       });
   };
+  useEffect(() => {
+    if (user) {
+      navigate(location.state);
+    }
+  }, [user]);
   return (
     <>
       <div className="hero min-h-screen bg-base-200">

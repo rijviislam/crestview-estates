@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 export default function CompleteProjectCard({ project }) {
   const { estate_title, image, description, location, segment_name, status } =
     project;
-  console.log(typeof project);
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>

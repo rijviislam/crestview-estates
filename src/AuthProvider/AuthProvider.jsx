@@ -59,12 +59,12 @@ export default function AuthProvider({ children }) {
 
   // GOOGLE LOGIN //
   const googleLogin = () => {
-    signInWithPopup(auth, googleProvider);
+    return signInWithPopup(auth, googleProvider);
   };
 
   // GITHUB LOGIN //
   const githubLogin = () => {
-    signInWithPopup(auth, githubProvider);
+    return signInWithPopup(auth, githubProvider);
   };
   // UPDATE PROFILE //
   const updateYourProfile = (res, { displayName, photoURL }) => {
