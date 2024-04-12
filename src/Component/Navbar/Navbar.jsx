@@ -4,9 +4,30 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Navbar() {
   const { user, signOutUser } = useContext(AuthContext);
-  // console.log(user);
-  const { photoURL, displayName } = user;
-  console.log(photoURL, displayName);
+  const navLink = (
+    <>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      {user && (
+        <>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/updateprofile">Update Profile</Link>
+          </li>
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
+        </>
+      )}
+
+      <li>
+        <Link to="/contact">Ccontact</Link>
+      </li>
+    </>
+  );
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -31,21 +52,7 @@ export default function Navbar() {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link to="/updateprofile">Update Profile</Link>
-            </li>
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
-            <li>
-              <Link to="/contact">Ccontact</Link>
-            </li>
+            {navLink}
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">
@@ -53,29 +60,12 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/updateprofile">Update Profile</Link>
-          </li>
-          <li>
-            <Link to="/profile">Profile</Link>
-          </li>
-          <li>
-            <Link to="/contact">Ccontact</Link>
-          </li>
-        </ul>
+        <ul className="menu menu-horizontal px-1">{navLink}</ul>
       </div>
 
       <div className="navbar-end">
         {user ? (
           <div className="flex gap-5 items-center justify-center">
-            {displayName}
             <div className="w-10 h-10  overflow-hidden rounded-full">
               <img
                 className="w-full h-full object-cover"

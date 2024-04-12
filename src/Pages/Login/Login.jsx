@@ -1,31 +1,33 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 
 export default function Login() {
   const { loginUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
   const onSubmit = (data) => {
     const { email, password } = data;
 
     loginUser(email, password)
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
         toast.success("Login Successfully!", {
           position: "top-center",
         });
+        reset();
+        navigate("/");
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(() => {
         toast.error("Can't Login!", {
           position: "top-center",
         });

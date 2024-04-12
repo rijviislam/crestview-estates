@@ -13,6 +13,7 @@ import Projects from "./Pages/Projects/Projects";
 import Register from "./Pages/Register/Register";
 import EstateDetails from "./Pages/Shared/EstateDetails";
 import UpdateProfile from "./Pages/UpdateProfile/UpdateProfile";
+import PrivateRoute from "./Routes/PrivateRoutes";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,21 +36,37 @@ const router = createBrowserRouter([
 
       {
         path: "/estatedetails/:id",
-        element: <EstateDetails />,
+        element: (
+          <PrivateRoute>
+            <EstateDetails />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/estate.json"),
       },
       {
         path: "/projects",
-        element: <Projects />,
+        element: (
+          <PrivateRoute>
+            <Projects />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/estate.json"),
       },
       {
         path: "/updateprofile",
-        element: <UpdateProfile />,
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/profile",
-        element: <Profile />,
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/contact",

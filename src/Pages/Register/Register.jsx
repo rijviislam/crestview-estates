@@ -1,40 +1,35 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Register() {
   const { createUser, updateYourProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
   const onSubmit = (data) => {
     const { email, password, fullName, imageurl } = data;
-    // console.log(fullName, imageurl);
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
         toast.success("Register Successfully!", {
           position: "top-center",
         });
         updateYourProfile(result.user, {
           displayName: fullName,
           photoURL: imageurl,
-        })
-          .then(() => {
-            console.log("profile updated");
-          })
-          .catch(() => {
-            console.log(`can't update profile!!`);
-          });
+        });
+        reset();
+        navigate("/");
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(() => {
         toast.error("Can't Register!", {
           position: "top-center",
         });
