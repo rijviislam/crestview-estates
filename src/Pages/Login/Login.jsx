@@ -10,7 +10,6 @@ export default function Login() {
   const { loginUser, user } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
   const {
     register,
     handleSubmit,

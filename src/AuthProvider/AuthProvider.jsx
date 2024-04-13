@@ -18,10 +18,21 @@ const githubProvider = new GithubAuthProvider();
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [reload, setReload] = useState(false);
+
+  console.log(user);
   // CREATE USER //
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
+  };
+
+  // UPDATE A USER PROFILE //
+  const updateUserProfile = (name, image) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: image,
+    });
   };
   // LOGIN WITH EMAIL AND PASSWORD //
 
@@ -33,12 +44,6 @@ export default function AuthProvider({ children }) {
   //   OBSERVER USER IS HE/SHE LOGIN OR NOT //
 
   useEffect(() => {
-    // onAuthStateChanged(auth, (user) => {
-    //   if (user) {
-    //     setUser(user);
-    //   }
-    //   setLoading(false);
-    // });
     const unSubscribe = onAuthStateChanged(auth, (observerFunc) => {
       setUser(observerFunc);
       setLoading(false);
@@ -46,11 +51,10 @@ export default function AuthProvider({ children }) {
     return () => {
       unSubscribe();
     };
-  }, []);
+  }, [reload]);
 
   //   SIGN OUT USER //
   const signOutUser = () => {
-    setUser(null);
     setLoading(true);
     return signOut(auth);
   };
@@ -67,16 +71,17 @@ export default function AuthProvider({ children }) {
     return signInWithPopup(auth, githubProvider);
   };
   // UPDATE PROFILE //
-  const updateYourProfile = (res, { displayName, photoURL }) => {
-    updateProfile(res, { displayName, photoURL });
-  };
+  // const updateYourProfile = (res, { displayName, photoURL }) => {
+  //   updateProfile(res, { displayName, photoURL });
+  // };
   const allValues = {
     createUser,
     loginUser,
     signOutUser,
     googleLogin,
     githubLogin,
-    updateYourProfile,
+    updateUserProfile,
+    setReload,
     user,
     loading,
   };

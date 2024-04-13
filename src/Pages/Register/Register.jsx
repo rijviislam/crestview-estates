@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Register() {
-  const { createUser, updateYourProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile, setReload } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const {
@@ -16,18 +16,17 @@ export default function Register() {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    const { email, password, fullName, imageurl } = data;
+    const { email, password, image, fullName } = data;
     createUser(email, password)
-      .then((result) => {
+      .then(() => {
         toast.success("Register Successfully!", {
           position: "top-center",
         });
-        updateYourProfile(result.user, {
-          displayName: fullName,
-          photoURL: imageurl,
+        updateUserProfile(fullName, image).then(() => {
+          setReload(true);
+          reset();
+          navigate("/updateprofile");
         });
-        reset();
-        navigate("/");
       })
       .catch(() => {
         toast.error("Can't Register!", {
@@ -80,7 +79,7 @@ export default function Register() {
                   type="text"
                   placeholder="image url"
                   className="input input-bordered"
-                  {...register("imageurl", { required: true })}
+                  {...register("image", { required: true })}
                 />
               </div>
               <div className="form-control">
