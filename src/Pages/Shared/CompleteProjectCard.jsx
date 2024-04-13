@@ -1,9 +1,14 @@
 import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
+
 export default function CompleteProjectCard({ project }) {
   const { estate_title, image, description, location, segment_name, status } =
     project;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
+      <Helmet>
+        <title>{estate_title}</title>
+      </Helmet>
       <figure>
         <img src={image} alt="Shoes" />
       </figure>

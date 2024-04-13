@@ -1,5 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
+import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -40,3 +41,7 @@ export default function EstateCard({ estate }) {
     </div>
   );
 }
+
+EstateCard.propTypes = {
+  estate: PropTypes.object,
+};

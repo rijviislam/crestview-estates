@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
@@ -7,6 +8,9 @@ export default function Profile() {
   //   const { email, displayName,  } = user;
   return (
     <div className="flex flex-col items-center justify-center my-10">
+      <Helmet>
+        <title>Profile</title>
+      </Helmet>
       <h2 className="text-3xl text-black">Profile Information</h2>
 
       <div className="card w-96 bg-base-100 shadow-xl">

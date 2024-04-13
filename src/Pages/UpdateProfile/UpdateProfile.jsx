@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
@@ -51,6 +52,9 @@ export default function UpdateProfile() {
   // };
   return (
     <div className="flex flex-col gap-3 mt-5 items-center">
+      <Helmet>
+        <title>Update Profile</title>
+      </Helmet>
       <h2 className="text-3xl text-black">Update your profile!</h2>
       <div className="min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">

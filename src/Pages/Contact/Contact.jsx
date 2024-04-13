@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet-async";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+
 export default function Contact() {
   return (
     <div className="flex items-center flex-col my-5">
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
       <h2 className="text-3xl text-black">Contact</h2>
       <div className="flex gap-10 my-10">
         <div className="bg-base-200 p-8 rounded-lg">

@@ -1,3 +1,6 @@
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
+
 export default function UpcomingProjectCard({ project }) {
   //   console.log(project);
   const {
@@ -12,6 +15,9 @@ export default function UpcomingProjectCard({ project }) {
   } = project;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
+      <Helmet>
+        <title>{estate_title}</title>
+      </Helmet>
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
@@ -29,3 +35,6 @@ export default function UpcomingProjectCard({ project }) {
     </div>
   );
 }
+UpcomingProjectCard.propTypes = {
+  project: PropTypes.object,
+};

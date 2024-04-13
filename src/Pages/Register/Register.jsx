@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -25,7 +26,7 @@ export default function Register() {
         updateUserProfile(fullName, image).then(() => {
           setReload(true);
           reset();
-          navigate("/updateprofile");
+          navigate("/");
         });
       })
       .catch(() => {
@@ -36,6 +37,9 @@ export default function Register() {
   };
   return (
     <>
+      <Helmet>
+        <title>Register</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <form

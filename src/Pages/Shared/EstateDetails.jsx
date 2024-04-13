@@ -1,4 +1,6 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
+
 export default function EstateDetails() {
   const { id } = useParams();
   const estate = useLoaderData();
@@ -18,6 +20,9 @@ export default function EstateDetails() {
   //   console.log(estate, id);
   return (
     <div className="flex flex-col items-center mt-5">
+      <Helmet>
+        <title>{estate_title}</title>
+      </Helmet>
       <h2 className="text-3xl">Estate Details</h2>
       <div className="card gap-5 h-[500px] card-side my-10 bg-base-100 shadow-xl border border-silver">
         <figure>
