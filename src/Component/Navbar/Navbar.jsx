@@ -67,7 +67,7 @@ export default function Navbar() {
       <div className="navbar-end">
         {user ? (
           <div className="flex gap-5 items-center justify-center">
-            <div className="w-10 h-10 border border-red-600 overflow-hidden rounded-full">
+            <div className="w-10 h-10  overflow-hidden rounded-full">
               <img
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content={user?.displayName}

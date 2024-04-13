@@ -35,7 +35,7 @@ export default function Login() {
   };
   useEffect(() => {
     if (user) {
-      navigate(location.state);
+      navigate(location.state || "/");
     }
   }, [user]);
   return (

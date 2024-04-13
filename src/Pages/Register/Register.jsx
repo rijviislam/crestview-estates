@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Register() {
   const { createUser, updateUserProfile, setReload } = useContext(AuthContext);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const {
     register,
@@ -24,9 +24,9 @@ export default function Register() {
           position: "top-center",
         });
         updateUserProfile(fullName, image).then(() => {
-          setReload(true);
           reset();
-          navigate("/");
+          setReload(true);
+          // navigate("/");
         });
       })
       .catch(() => {
