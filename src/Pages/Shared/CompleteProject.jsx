@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import CompleteProjectCard from "./CompleteProjectCard";
 
 export default function CompleteProject({ projects }) {
-  console.log(typeof projects);
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-3xl">Complete Project</h2>

@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-
 export default function Navbar() {
   const { user, signOutUser } = useContext(AuthContext);
   const navLink = (
@@ -68,6 +69,8 @@ export default function Navbar() {
           <div className="flex gap-5 items-center justify-center">
             <div className="w-10 h-10 border border-red-600 overflow-hidden rounded-full">
               <img
+                data-tooltip-id="my-tooltip"
+                data-tooltip-content={user?.displayName}
                 className="w-full h-full object-cover"
                 src={user?.photoURL || "https://i.ibb.co/HGCGmV3/OIP.jpg"}
               />
@@ -85,6 +88,7 @@ export default function Navbar() {
           </Link>
         )}
       </div>
+      <Tooltip id="my-tooltip" />
     </div>
   );
 }
