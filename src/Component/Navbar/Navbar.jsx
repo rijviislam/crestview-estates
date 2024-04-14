@@ -13,7 +13,7 @@ export default function Navbar() {
       {user && (
         <>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">Project</Link>
           </li>
           <li>
             <Link to="/updateprofile">Update Profile</Link>

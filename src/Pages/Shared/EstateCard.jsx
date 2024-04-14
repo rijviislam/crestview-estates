@@ -1,7 +1,5 @@
-import AOS from "aos";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function EstateCard({ estate }) {
@@ -15,13 +13,11 @@ export default function EstateCard({ estate }) {
     id,
   } = estate;
 
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
   return (
-    <div className="card w-96 bg-base-100 shadow-xl border border-silver">
+    <div
+      data-aos="fade-up"
+      className="card w-96 bg-base-100 shadow-xl border border-silver"
+    >
       <figure>
         <img src={image} className="w-96 object-cover h-[200px]" alt="Shoes" />
       </figure>

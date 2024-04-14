@@ -53,6 +53,7 @@ const router = createBrowserRouter([
         ),
         loader: () => fetch("/estate.json"),
       },
+
       {
         path: "/updateprofile",
         element: (

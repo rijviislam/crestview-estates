@@ -43,9 +43,9 @@ export default function UpdateProfile() {
         <title>Update Profile</title>
       </Helmet>
       <h2 className="text-3xl text-black">Update your profile!</h2>
-      <div className="min-h-screen">
+      <div data-aos="flip-up" className="min-h-screen ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <form className=" w-[500px] rounded-sm  shadow-2xl bg-base-100">
+          <form className=" w-[500px]  border border-silver rounded-lg  shadow-2xl bg-base-100">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">

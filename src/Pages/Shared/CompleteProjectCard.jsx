@@ -1,14 +1,23 @@
 import PropTypes from "prop-types";
-import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+// import { Helmet } from "react-helmet-async";
 
 export default function CompleteProjectCard({ project }) {
-  const { estate_title, image, description, location, segment_name, status } =
-    project;
+  const {
+    id,
+    estate_title,
+    image,
+    description,
+    location,
+    segment_name,
+    status,
+    button_text,
+  } = project;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
-      <Helmet>
+      {/* <Helmet>
         <title>{estate_title}</title>
-      </Helmet>
+      </Helmet> */}
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
@@ -18,6 +27,12 @@ export default function CompleteProjectCard({ project }) {
           <div className="badge badge-secondary">{status}</div>
         </h2>
         <p>{description}</p>
+        <Link
+          to={`/estatedetails/${id}`}
+          className="badge border border-red-600 badge-outline"
+        >
+          {button_text}
+        </Link>
         <div className="card-actions justify-end">
           <div className="badge badge-outline">{location}</div>
           <div className="badge badge-outline">{segment_name}</div>

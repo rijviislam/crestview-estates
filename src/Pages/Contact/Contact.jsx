@@ -11,7 +11,13 @@ export default function Contact() {
       </Helmet>
       <h2 className="text-3xl text-black">Contact</h2>
       <div className="flex gap-10 my-10">
-        <div className="bg-base-200 p-8 rounded-lg">
+        <div
+          data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1000"
+          className="bg-base-200 p-8 rounded-lg"
+        >
           <h2 className="text-2xl mb-5 text-black ">CORPORATE OFFICE</h2>
           <div className="flex flex-col gap-8">
             <p className="flex gap-3 items-start w-[400px]">
@@ -47,7 +53,13 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="bg-base-200 w-[500px] p-8 rounded-lg">
+        <div
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1000"
+          className="bg-base-200 w-[500px] p-8 rounded-lg"
+        >
           <h2 className="text-2xl mb-5 text-black">CONNECT WITH US</h2>
           <form className="">
             <div className="form-control">

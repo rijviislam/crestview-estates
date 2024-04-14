@@ -126,8 +126,8 @@
     "area": "1500 sq ft",
     "location": "New York City, New York",
     "facilities": ["Balcony", "Gym", "Rooftop Terrace"],
-    "image": "https://i.imgur.com/tG2vM5b.jpg",
-    "button_text": "Schedule Tour"
+    "image": "https://i.ibb.co/h8ZJydm/R.jpg",
+    "button_text": "View Property"
   },
   {
     "id": 11,
@@ -139,8 +139,8 @@
     "area": "1000 sq ft",
     "location": "Miami Beach, Florida",
     "facilities": ["Patio", "Beach Access", "Oceanfront Views"],
-    "image": "https://i.pinimg.com/originals/7d5d9893228debe178c6c42b292c5827f3d1e2e8.jpg",
-    "button_text": "Learn More"
+    "image": "https://i.ibb.co/vwcCvvB/R-1.jpg",
+    "button_text": "View Property"
   },
   {
     "id": 12,
@@ -152,8 +152,8 @@
     "area": "800 sq ft",
     "location": "Lake Placid, New York",
     "facilities": ["Fireplace", "Jacuzzi", "Hiking Trails"],
-    "image": "https://images.unsplash.com/photo-1580059120030-eecfd6099b30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlLWxvZ2FyfHx8fDE2NTg3MjUxMjA&auto=format&fit=crop&w=800&q=80",
-    "button_text": "Inquire Now"
+    "image": "https://i.ibb.co/Rzw5pwc/OIP.jpg",
+    "button_text": "View Property"
   },
   {
     "id": 13,
@@ -165,8 +165,8 @@
     "area": "10,000 sq ft",
     "location": "Napa Valley, California",
     "facilities": ["Vineyard", "Pool", "Wine Cellar"],
-    "image": "https://www.luxuryportfolio.com/media/multiple/images/san-francisco-bay-area/st-helena/saint-helenas-wine-country-estate/saint-helenas-wine-country-estate-01_HI.jpg",
-    "button_text": "Contact Agent"
+    "image": "https://i.ibb.co/znxQTtS/a-tuscan-vineyard-estate-stotler-design-group-img-26b123de00e5d4d1-4-4559-1-07635ee.jpg",
+    "button_text": "View Property"
   },
   {
     "id": 14,
@@ -178,7 +178,7 @@
     "area": "1200 sq ft",
     "location": "Lake Tahoe, California",
     "facilities": ["Dock", "Boat Slip", "Outdoor Fireplace"],
-    "image": "https://i.ibb.co/hmJWCNV/photo-1558036117-15d82a90b9b1.jpg",
+    "image": "https://i.ibb.co/VChqvhd/OIP-1.jpg",
     "button_text": "View Property"
   },
   {
@@ -191,8 +191,8 @@
     "area": "1500 sq ft",
     "location": "New York City, New York",
     "facilities": ["Balcony", "Gym", "Rooftop Terrace"],
-    "image": "https://i.imgur.com/tG2vM5b.jpg",
-    "button_text": "Schedule Tour"
+    "image": "https://i.ibb.co/1L4mWgH/Duplex-loft-in-Soho-Manhattan.jpg",
+    "button_text": "View Property"
   },
   {
     "id": 16,
@@ -204,8 +204,8 @@
     "area": "1000 sq ft",
     "location": "Miami Beach, Florida",
     "facilities": ["Patio", "Beach Access", "Oceanfront Views"],
-    "image": "https://i.pinimg.com/originals/7d5d9893228debe178c6c42b292c5827f3d1e2e8.jpg",
-    "button_text": "Learn More"
+    "image": "https://i.ibb.co/5kp0xt6/OIP-2.jpg",
+    "button_text": "View Property"
   },
   {
     "id": 17,
@@ -217,7 +217,7 @@
     "area": "800 sq ft",
     "location": "Lake Placid, New York",
     "facilities": ["Fireplace", "Jacuzzi", "Hiking Trails"],
-    "image": "https://images.unsplash.com/photo-1580059120030-eecfd6099b30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlLWxvZ2FyfHx8fDE2NTg3MjUxMjA&auto=format&fit=crop&w=800&q=800",
-    "button_text": "Inquire Now"
+    "image": "https://i.ibb.co/3TZrMBk/download.jpg",
+    "button_text": "View Property"
   }
 ]

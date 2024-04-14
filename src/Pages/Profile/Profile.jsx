@@ -13,7 +13,7 @@ export default function Profile() {
       </Helmet>
       <h2 className="text-3xl text-black">Profile Information</h2>
 
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div data-aos="flip-down" className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img
             src={user?.photoURL || "https://i.ibb.co/HGCGmV3/OIP.jpg"}
