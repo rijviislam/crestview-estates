@@ -16,8 +16,6 @@ export default function EstateDetails() {
     segment_name,
     status,
   } = findEstateId;
-  //   console.log(findEstateId);
-  //   console.log(estate, id);
   return (
     <div className="flex flex-col items-center mt-5">
       <Helmet>

@@ -1,6 +1,7 @@
 import { updateProfile } from "firebase/auth";
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import auth from "../../Firebase/firebase.config";
@@ -23,6 +24,9 @@ export default function UpdateProfile() {
           email: userEmail,
           displayName: updateName,
           photoURL: imagUrl,
+        });
+        toast.success("Profile update Successfully!", {
+          position: "top-center",
         });
         setUpdateName("");
         setImageUrl("");
@@ -87,6 +91,7 @@ export default function UpdateProfile() {
               </div>
             </div>
           </form>
+          <ToastContainer />
         </div>
       </div>
     </div>

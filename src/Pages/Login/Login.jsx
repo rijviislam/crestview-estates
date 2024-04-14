@@ -27,10 +27,11 @@ export default function Login() {
         });
         reset();
       })
-      .catch(() => {
-        toast.error("Can't Login!", {
+      .catch((error) => {
+        toast.error("Can't login please check your email and password!", {
           position: "top-center",
         });
+        console.error(error);
       });
   };
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -8,6 +8,8 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Register() {
   const { createUser, updateUserProfile, setReload } = useContext(AuthContext);
+  const [regErr, setRegErr] = useState("");
+  // const [passErr, setPassErr] = useState("");
   const {
     register,
     handleSubmit,
@@ -17,26 +19,36 @@ export default function Register() {
   const onSubmit = (data) => {
     const { email, password, image, fullName } = data;
 
+    setRegErr("");
+    // setPassErr("");
+    if (!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/.test(password)) {
+      toast.error("Write a strong password!", {
+        position: "top-center",
+      });
+      return;
+    }
+
     createUser(email, password)
       .then(() => {
         toast.success("Register Successfully!", {
           position: "top-center",
         });
         updateUserProfile(fullName, image).then(() => {
-          reset();
           setReload(true);
-          // navigate("/");
+          reset();
         });
       })
-      .catch(() => {
-        if (password.length < 6) {
-          toast.error("Password 6 charecter!", {
+      .catch((error) => {
+        setRegErr(error.message);
+        if (regErr) {
+          toast.error(`Can't Register with this email!`, {
             position: "top-center",
           });
           return;
         }
       });
   };
+  console.log(regErr);
   return (
     <>
       <Helmet>
