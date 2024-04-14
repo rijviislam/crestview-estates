@@ -20,7 +20,6 @@ export default function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [reload, setReload] = useState(false);
 
-  console.log(user);
   // CREATE USER //
   const createUser = (email, password) => {
     setLoading(true);
@@ -82,6 +81,7 @@ export default function AuthProvider({ children }) {
     githubLogin,
     updateUserProfile,
     setReload,
+    setUser,
     user,
     loading,
   };

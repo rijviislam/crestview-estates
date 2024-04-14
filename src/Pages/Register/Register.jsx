@@ -8,8 +8,6 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Register() {
   const { createUser, updateUserProfile, setReload } = useContext(AuthContext);
-  // const navigate = useNavigate();
-
   const {
     register,
     handleSubmit,
@@ -18,6 +16,7 @@ export default function Register() {
   } = useForm();
   const onSubmit = (data) => {
     const { email, password, image, fullName } = data;
+
     createUser(email, password)
       .then(() => {
         toast.success("Register Successfully!", {
@@ -30,9 +29,12 @@ export default function Register() {
         });
       })
       .catch(() => {
-        toast.error("Can't Register!", {
-          position: "top-center",
-        });
+        if (password.length < 6) {
+          toast.error("Password 6 charecter!", {
+            position: "top-center",
+          });
+          return;
+        }
       });
   };
   return (
@@ -66,7 +68,7 @@ export default function Register() {
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="email"
                   className="input input-bordered"
                   {...register("email", { required: true })}
