@@ -9,17 +9,24 @@ export default function UpdateProfile() {
   const { user, setUser } = useContext(AuthContext);
   const [updateName, setUpdateName] = useState(user?.displayName || "");
   const [imagUrl, setImageUrl] = useState(user?.photoURL || "");
-  console.log(updateName, imagUrl);
+  const [userEmail, setUserEmail] = useState(user?.email || "");
   const handleUpdate = (e) => {
     e.preventDefault();
     updateProfile(auth.currentUser, {
+      email: userEmail,
       displayName: updateName,
       photoURL: imagUrl,
     })
       .then(() => {
-        setUser({ ...user, displayName: updateName, photoURL: imagUrl });
+        setUser({
+          ...user,
+          email: userEmail,
+          displayName: updateName,
+          photoURL: imagUrl,
+        });
         setUpdateName("");
         setImageUrl("");
+        setUserEmail("");
       })
       .catch(() => {
         console.error("error here");
@@ -59,6 +66,18 @@ export default function UpdateProfile() {
                   defaultValue={user.photoURL}
                   className="input input-bordered"
                   onChange={(e) => setImageUrl(e.target.value)}
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  defaultValue={user.email}
+                  className="input input-bordered"
+                  onChange={(e) => setUserEmail(e.target.value)}
                 />
               </div>
               <div className="form-control mt-6 p-0">
