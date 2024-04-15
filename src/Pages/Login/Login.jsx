@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../../Component/SocialLogin/SocialLogin";
+import SignSVG from "../../assets/cyborg-man-with-entrance.png";
 
 export default function Login() {
   const { loginUser, user } = useContext(AuthContext);
@@ -44,8 +45,11 @@ export default function Login() {
       <Helmet>
         <title>Log in</title>
       </Helmet>
-      <div className="w-full flex items-center justify-center bg-[#E9E7F7]">
-        <div className="w-full my-10 max-w-md p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
+      <div className="w-full flex items-center md:gap-10 justify-center  bg-[#E9E7F7]">
+        <div className="w-[300px] lg:block hidden">
+          <img className="w-full" src={SignSVG} alt="" />
+        </div>
+        <div className="w-full my-10 max-w-md p-5 lg:p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800 lg:mx-0 mx-5">
           <h1 className="text-2xl font-bold text-center">Login</h1>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -116,6 +120,7 @@ export default function Login() {
             </Link>
           </label>
         </div>
+
         <ToastContainer />
       </div>
     </>

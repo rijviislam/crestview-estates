@@ -2,13 +2,13 @@ export default function Best() {
   return (
     <>
       <div className="px-14 bg-[#E9E7F7] flex flex-col gap-10 items-center justify-center">
-        <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">
+        <h2 className="text-3xl text-center font-bold text-[rgb(41,56,78)]">
           What Makes Us The Best In Real Estate
         </h2>
-        <div className=" grid gap-3 lg:gap-5 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10">
+        <div className=" grid gap-3 lg:gap-5 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 place-items-center">
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-base-200 border"
+            className="card lg:w-96 w-[350px] lg:h-[400px] h-[350px]  bg-base-200 shadow-xl lg:p-8 p-4"
           >
             <h3 className="text-2xl mb-3">Your Dream Our Pledge</h3>
 
@@ -17,7 +17,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -29,7 +29,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="absolute right-0 w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                 <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
@@ -38,9 +38,10 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
+            className="card lg:w-96 w-[350px] lg:h-[400px] h-[350px]  bg-base-200 shadow-xl lg:p-8 p-4"
           >
             <h3 className="text-2xl mb-3">
+              {" "}
               A Symbol of Excellence in Real Estate
             </h3>
 
@@ -49,7 +50,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -61,7 +62,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="absolute right-0 w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                 <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
@@ -70,7 +71,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
+            className="card lg:w-96 w-[350px] lg:h-[400px] h-[350px]  bg-base-200 shadow-xl lg:p-8 p-4"
           >
             <h3 className="text-2xl mb-3">On-Time Handover</h3>
 
@@ -79,7 +80,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -92,7 +93,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="absolute right-0 w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                 <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
@@ -101,7 +102,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4  py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
+            className="card lg:w-96 w-[350px] lg:h-[400px] h-[350px]  bg-base-200 shadow-xl lg:p-8 p-4"
           >
             <h3 className="text-2xl mb-3">Quality Construction</h3>
 
@@ -110,7 +111,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -123,7 +124,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="absolute right-0 w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                 <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
@@ -132,7 +133,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4  py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
+            className="card lg:w-96 w-[350px] lg:h-[400px] h-[350px] bg-base-200 shadow-xl lg:p-8 p-4"
           >
             <h3 className="text-2xl mb-3">Ethical Engineering</h3>
 
@@ -141,7 +142,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                 <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
@@ -153,7 +154,7 @@ export default function Best() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
                 fill="currentColor"
-                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+                className="absolute right-0 w-5 lg:w-8 h-5 lg:h-8 text-violet-400 dark:text-violet-600"
               >
                 <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                 <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>

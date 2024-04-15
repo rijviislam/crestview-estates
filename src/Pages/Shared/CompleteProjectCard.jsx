@@ -13,7 +13,7 @@ export default function CompleteProjectCard({ project }) {
     button_text,
   } = project;
   return (
-    <div className="card w-96 bg-base-200 shadow-xl">
+    <div className="card w-[350px] lg:w-96 bg-base-200 shadow-xl">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>

@@ -31,22 +31,32 @@ export default function Footer() {
             <ul className="space-y-1">
               <li>
                 <a rel="noopener noreferrer" href="#">
-                  Features
+                  Single-family homes
                 </a>
               </li>
               <li>
                 <a rel="noopener noreferrer" href="#">
-                  Integrations
+                  Townhouses
                 </a>
               </li>
               <li>
                 <a rel="noopener noreferrer" href="#">
-                  Pricing
+                  Apartments
                 </a>
               </li>
               <li>
                 <a rel="noopener noreferrer" href="#">
-                  FAQ
+                  Student housing
+                </a>
+              </li>
+              <li>
+                <a rel="noopener noreferrer" href="#">
+                  Senior living communities
+                </a>
+              </li>
+              <li>
+                <a rel="noopener noreferrer" href="#">
+                  Vacation rentals
                 </a>
               </li>
             </ul>

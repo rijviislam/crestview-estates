@@ -17,7 +17,7 @@ export default function Profile() {
 
       <div
         data-aos="flip-down"
-        className="card w-96 mt-5 bg-base-200 shadow-xl"
+        className="card w-[350px] lg:w-96 mt-5 bg-base-200 shadow-xl"
       >
         <figure className="px-10 pt-10">
           <img

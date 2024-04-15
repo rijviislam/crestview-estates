@@ -40,7 +40,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <div className="navbar px-5 justify-center bg-[#E9E7F7] border border-b-gray-300">
+    <div className="navbar px-5 justify-center bg-[#E9E7F7] border border-b-gray-200">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -90,7 +90,7 @@ export default function Navbar() {
             </div>
             <button
               onClick={signOutUser}
-              className="btn btn-sm border bg-[#d5d5d6] text-[rgb(41,56,78)] border-[rgb(41,56,78)]"
+              className="btn btn-sm border  text-[rgb(41,56,78)]  btn-warning"
             >
               Logout
             </button>

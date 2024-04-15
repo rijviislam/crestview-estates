@@ -10,41 +10,41 @@ export default function Contact() {
         <title>Contact</title>
       </Helmet>
       <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">Contact</h2>
-      <div className="flex flex-col lg:flex-row  gap-10 my-10">
+      <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 my-5 lg:my-10">
         <div
           data-aos="fade-right"
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="1000"
-          className="bg-base-200 p-8 rounded-lg"
+          className="bg-base-200  p-5 lg:p-8 w-[350px] lg:w-[500px] rounded-lg"
         >
           <h2 className="text-2xl mb-5 text-black ">CORPORATE OFFICE</h2>
-          <div className="flex flex-col gap-8">
-            <p className="flex gap-3 items-start w-[400px]">
+          <div className="flex  flex-col gap-4 lg:gap-8">
+            <p className="flex gap-1 lg:gap-3 items-start w-[400px]">
               <FaLocationDot className="text-4xl" />
-              <small className="ml-4 text-lg cursor-pointer">
+              <small className="lg:ml-4 w-[300px] lg:w-[400px] text-lg cursor-pointer">
                 Crestview Estates Building, 350 5th Ave, New York, NY 10118, USA
               </small>
             </p>
-            <p className="flex gap-5 items-start w-[400px]">
+            <p className="flex gap-2 lg:gap-5 items-start w-[400px]">
               <MdEmail className="text-3xl" />
               <small className=" text-lg cursor-pointer">
                 crestviewestates@gmail.com
               </small>
             </p>
-            <p className="flex gap-5 items-start w-[400px]">
+            <p className="flex gap-2 lg:gap-5 items-start w-[400px]">
               <IoCall className="text-3xl" />
               <small className=" text-lg cursor-pointer">
                 1655990 (Sales Enquiry)
               </small>
             </p>
-            <p className="flex gap-5 items-start w-[400px]">
+            <p className="flex gap-2 lg:gap-5 items-start w-[400px]">
               <IoCall className="text-gray-600 text-3xl" />
               <small className=" text-lg cursor-pointer">
                 0912 444 333 222 (General Enquiry)
               </small>
             </p>
-            <p className="flex gap-5 items-start w-[400px]">
+            <p className="flex gap-2 lg:gap-5 items-start w-[400px]">
               <IoCall className="text-green-700 text-3xl" />
               <small className=" text-lg cursor-pointer">
                 09112 555 66 (Land Enquiry)
@@ -57,7 +57,7 @@ export default function Contact() {
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="1000"
-          className="bg-base-200 w-[500px] p-8 rounded-lg"
+          className="bg-base-200 w-[350px] lg:w-[500px] p-8 rounded-lg"
         >
           <h2 className="text-2xl mb-5 text-black">CONNECT WITH US</h2>
           <form className="">
