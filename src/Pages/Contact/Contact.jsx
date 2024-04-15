@@ -5,11 +5,11 @@ import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
   return (
-    <div className="flex items-center flex-col my-5">
+    <div className="flex items-center flex-col py-5 bg-[#E9E7F7]">
       <Helmet>
         <title>Contact</title>
       </Helmet>
-      <h2 className="text-3xl text-black">Contact</h2>
+      <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">Contact</h2>
       <div className="flex flex-col lg:flex-row  gap-10 my-10">
         <div
           data-aos="fade-right"
@@ -23,14 +23,13 @@ export default function Contact() {
             <p className="flex gap-3 items-start w-[400px]">
               <FaLocationDot className="text-4xl" />
               <small className="ml-4 text-lg cursor-pointer">
-                Sheltech Tower, 60 Sheikh Russel Square, West Panthapath,
-                Dhaka-1205, Bangladesh
+                Crestview Estates Building, 350 5th Ave, New York, NY 10118, USA
               </small>
             </p>
             <p className="flex gap-5 items-start w-[400px]">
               <MdEmail className="text-3xl" />
               <small className=" text-lg cursor-pointer">
-                realestate@gmail.com
+                crestviewestates@gmail.com
               </small>
             </p>
             <p className="flex gap-5 items-start w-[400px]">

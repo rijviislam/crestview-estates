@@ -44,7 +44,7 @@ export default function Login() {
       <Helmet>
         <title>Log in</title>
       </Helmet>
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center bg-[#E9E7F7]">
         <div className="w-full my-10 max-w-md p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
           <h1 className="text-2xl font-bold text-center">Login</h1>
           <form
@@ -96,7 +96,7 @@ export default function Login() {
                 </a>
               </div>
             </div>
-            <button className="block w-full p-3 text-center rounded-sm text-gray-900 dark:text-gray-50 bg-violet-400 dark:bg-violet-600">
+            <button className="block w-full p-3 btn btn-primary text-center rounded-md text-gray-900 dark:text-gray-50  ">
               Sign in
             </button>
           </form>

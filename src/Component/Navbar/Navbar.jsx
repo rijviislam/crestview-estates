@@ -40,7 +40,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <div className="navbar  px-5 justify-center bg-[#E9E7F7]">
+    <div className="navbar px-5 justify-center bg-[#E9E7F7] border border-b-gray-300">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -97,7 +97,9 @@ export default function Navbar() {
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn btn-sm  btn-ghost">Login</button>
+            <button className="btn btn-sm text-white  btn-primary">
+              Login
+            </button>
           </Link>
         )}
       </div>

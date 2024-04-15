@@ -38,14 +38,16 @@ export default function UpdateProfile() {
   };
 
   return (
-    <div className="flex flex-col gap-3 mt-5 items-center">
+    <div className="flex flex-col gap-3 pt-5 items-center bg-[#E9E7F7]">
       <Helmet>
         <title>Update Profile</title>
       </Helmet>
-      <h2 className="text-3xl text-black">Update your profile!</h2>
+      <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">
+        Update your profile!
+      </h2>
       <div data-aos="flip-up" className="min-h-screen ">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <form className=" w-[350px] lg:w-[500px]  border border-silver rounded-lg  shadow-2xl bg-base-100">
+        <div className="hero-content flex-col lg:flex-row-reverse ">
+          <form className=" w-[350px] lg:w-[500px]  border border-silver rounded-lg  shadow-2xl bg-base-200">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">

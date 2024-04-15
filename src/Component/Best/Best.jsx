@@ -2,11 +2,13 @@ export default function Best() {
   return (
     <>
       <div className="px-14 bg-[#E9E7F7] flex flex-col gap-10 items-center justify-center">
-        <h2 className="text-3xl">What Makes Us The Best In Real Estate</h2>
+        <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">
+          What Makes Us The Best In Real Estate
+        </h2>
         <div className=" grid gap-3 lg:gap-5 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10">
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50 "
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-base-200 border"
           >
             <h3 className="text-2xl mb-3">Your Dream Our Pledge</h3>
 
@@ -36,7 +38,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
           >
             <h3 className="text-2xl mb-3">
               A Symbol of Excellence in Real Estate
@@ -68,7 +70,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
           >
             <h3 className="text-2xl mb-3">On-Time Handover</h3>
 
@@ -99,7 +101,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+            className="px-4  py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
           >
             <h3 className="text-2xl mb-3">Quality Construction</h3>
 
@@ -130,7 +132,7 @@ export default function Best() {
           </div>
           <div
             data-aos="fade-up"
-            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+            className="px-4  py-10 rounded-lg sm:px-8 md:px-12 bg-base-200"
           >
             <h3 className="text-2xl mb-3">Ethical Engineering</h3>
 

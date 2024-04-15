@@ -1,9 +1,12 @@
+import PropTypes from "prop-types";
 import UpcomingProjectCard from "./UpcomingProjectCard";
 
 export default function UpcomingProject({ projects }) {
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="text-3xl">Upcoming Project</h2>
+    <div className="flex flex-col items-center my-10">
+      <h2 className="text-sm md:text-xl font-bold text-[rgb(41,56,78)] lg:text-3xl">
+        Upcoming Project
+      </h2>
       <div
         data-aos="fade-up"
         className="grid grid-cols-1 gap-5 my-10 md:grid-cols-3"
@@ -15,3 +18,6 @@ export default function UpcomingProject({ projects }) {
     </div>
   );
 }
+UpcomingProject.propTypes = {
+  projects: PropTypes.object,
+};

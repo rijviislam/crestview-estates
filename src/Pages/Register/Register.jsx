@@ -54,8 +54,9 @@ export default function Register() {
       <Helmet>
         <title>Register</title>
       </Helmet>
-      <div className="w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center bg-[#E9E7F7]">
         <div className="w-full my-10 max-w-md p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
+          <h1 className="text-2xl font-bold text-center">Register</h1>
           <form
             onSubmit={handleSubmit(onSubmit)}
             noValidate=""
@@ -123,7 +124,7 @@ export default function Register() {
                 <span className="text-red-500">This field is required</span>
               )}
             </div>
-            <button className="block w-full p-3 text-center rounded-md dark:text-gray-50 dark:bg-violet-600">
+            <button className="block w-full p-3 text-center rounded-md dark:text-gray-50 btn btn-primary">
               Register
             </button>
             <label className="label">
