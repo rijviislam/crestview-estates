@@ -1,7 +1,7 @@
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import image5 from "../../assets/apartment3.jfif";
 import image1 from "../../assets/apartments.jfif";
@@ -19,10 +19,26 @@ export default function Slider() {
         </h3>
       </div>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        modules={[FreeMode]}
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>

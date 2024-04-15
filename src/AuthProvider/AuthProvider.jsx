@@ -1,4 +1,5 @@
 import {
+  FacebookAuthProvider,
   GithubAuthProvider,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -15,6 +16,7 @@ import auth from "../Firebase/firebase.config";
 export const AuthContext = createContext(null);
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
+const facebookProvider = new FacebookAuthProvider();
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -69,6 +71,11 @@ export default function AuthProvider({ children }) {
   const githubLogin = () => {
     return signInWithPopup(auth, githubProvider);
   };
+  // FACEBOOK LOGIN //
+  const facebookLogin = () => {
+    return signInWithPopup(auth, facebookProvider);
+  };
+
   // UPDATE PROFILE //
   // const updateYourProfile = (res, { displayName, photoURL }) => {
   //   updateProfile(res, { displayName, photoURL });
@@ -82,6 +89,7 @@ export default function AuthProvider({ children }) {
     updateUserProfile,
     setReload,
     setUser,
+    facebookLogin,
     user,
     loading,
   };
