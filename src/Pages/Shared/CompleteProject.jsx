@@ -18,5 +18,5 @@ export default function CompleteProject({ projects }) {
 }
 
 CompleteProject.propTypes = {
-  projects: PropTypes.object,
+  projects: PropTypes.array,
 };

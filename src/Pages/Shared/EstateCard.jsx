@@ -25,13 +25,18 @@ export default function EstateCard({ estate }) {
       <div className="card-body">
         <h2 className="card-title">{estate_title}</h2>
         <p>{description}</p>
-        <div className="flex justify-between items-center">
-          <Link to={`/estatedetails/${id}`} className="badge badge-outline">
+        <div className="flex justify-between mt-3">
+          <Link
+            to={`/estatedetails/${id}`}
+            className="badge px-3 py-5 bg-blue-500 border-none text-white font-medium badge-outline"
+          >
             {button_text}
           </Link>
-          <div className="flex gap-2">
-            <div className="badge badge-secondary">{segment_name}</div>
-            <div className="badge badge-secondary">{status}</div>
+          <div className="flex gap-2 flex-col">
+            <div className="badge py-3 px-2 badge-secondary">
+              {segment_name}
+            </div>
+            <div className="badge py-3 px-2 badge-secondary">{status}</div>
           </div>
         </div>
       </div>

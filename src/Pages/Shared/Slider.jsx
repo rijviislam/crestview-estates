@@ -29,8 +29,8 @@ export default function Slider() {
           <div className="w-[315px] h-[250px] lg:h-[350px]">
             <img src={image4} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
+              <strong>The Elliott Bay View</strong>
+              <p className="w-full">Beacon Hill, Seattle, Washington </p>
             </div>
           </div>
         </SwiperSlide>
@@ -38,8 +38,8 @@ export default function Slider() {
           <div className="w-[315px] h-[250px] lg:h-[350px]">
             <img src={image1} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
+              <strong>The Lofts at Wrightwood</strong>
+              <p className="w-full">Andersonville, Chicago, Illinois </p>
             </div>
           </div>
         </SwiperSlide>
@@ -47,8 +47,8 @@ export default function Slider() {
           <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image2} alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
+              <strong>The Kōan on South Congress</strong>
+              <p className="w-full">The Lofts at Wrightwood</p>
             </div>
           </div>
         </SwiperSlide>
@@ -56,17 +56,8 @@ export default function Slider() {
           <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image3} alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
-            <img src={image4} alt="" />
-            <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
+              <strong>The Cady Heron</strong>
+              <p className="w-full">Georgetown, Washington D.C.</p>
             </div>
           </div>
         </SwiperSlide>
@@ -74,8 +65,8 @@ export default function Slider() {
           <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image5} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
+              <strong>The Pacific Tides</strong>
+              <p className="w-full">Venice Beach, Los Angeles, California </p>
             </div>
           </div>
         </SwiperSlide>
@@ -83,8 +74,10 @@ export default function Slider() {
           <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image6} className="" alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
-              <strong>MAX TOWER</strong>
-              <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
+              <strong>The Washington Mews</strong>
+              <p className="w-full">
+                Greenwich Village, New York City, New York
+              </p>
             </div>
           </div>
         </SwiperSlide>

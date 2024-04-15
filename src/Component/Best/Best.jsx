@@ -3,59 +3,160 @@ export default function Best() {
     <>
       <div className="px-14 bg-[#E9E7F7] flex flex-col gap-10 items-center justify-center">
         <h2 className="text-3xl">What Makes Us The Best In Real Estate</h2>
-        <div className="my-5 grid lg:gap-5 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div className="border border-red-600">
-            <h3 className="text-2xl">Your Dream Our Pledge</h3>
-            <div className="border border-red-600">
-              <h5 className="text-xl">
-                Turning Dreams into Reality. Here, you envision the future you
-                crave. We stand beside you, dedicated to making it a reality.
-                Together, we'll bridge the gap between aspiration and
-                achievement.
-              </h5>
-            </div>
+        <div className=" grid gap-3 lg:gap-5 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10">
+          <div
+            data-aos="fade-up"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50 "
+          >
+            <h3 className="text-2xl mb-3">Your Dream Our Pledge</h3>
+
+            <p className="relative px-6 py-1 text-lg italic text-center text-gray-100 dark:text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+              </svg>
+              Turning Dreams into Reality. Here, you envision the future you
+              crave. We stand beside you, dedicated to making it a reality.
+              Together, we'll bridge the gap between aspiration and achievement.
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+              </svg>
+            </p>
           </div>
-          <div className="border border-red-600">
-            <h3 className="text-2xl">A Symbol of Excellence in Real Estate</h3>
-            <div className="border border-red-600">
-              <h5 className="text-xl">
-                This isn't just a tagline, it's our commitment. We surpass
-                expectations, delivering premium service and expertise to guide
-                you through every step of your real estate journey.
-              </h5>
-            </div>
+          <div
+            data-aos="fade-up"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+          >
+            <h3 className="text-2xl mb-3">
+              A Symbol of Excellence in Real Estate
+            </h3>
+
+            <p className="relative px-6 py-1 text-lg italic text-center text-gray-100 dark:text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+              </svg>
+              This isn't just a tagline, it's our commitment. We surpass
+              expectations, delivering premium service and expertise to guide
+              you through every step of your real estate journey.
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+              </svg>
+            </p>
           </div>
-          <div className="border border-red-600">
-            <h3 className="text-2xl">On-Time Handover</h3>
-            <div className="border border-red-600">
-              <h5 className="text-xl">
-                Timely completion of handover tasks ensures a smooth transfer of
-                projects or responsibilities. This minimizes disruption and
-                empowers the recipient to hit the ground running. On-time
-                handover is the cornerstone of efficient operations.
-              </h5>
-            </div>
+          <div
+            data-aos="fade-up"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+          >
+            <h3 className="text-2xl mb-3">On-Time Handover</h3>
+
+            <p className="relative px-6 py-1 text-lg italic text-center text-gray-100 dark:text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+              </svg>
+              Timely completion of handover tasks ensures a smooth transfer of
+              projects or responsibilities. This minimizes disruption and
+              empowers the recipient to hit the ground running. On-time handover
+              is the cornerstone of efficient operations.
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+              </svg>
+            </p>
           </div>
-          <div className="border border-red-600">
-            <h3 className="text-2xl">Quality Construction</h3>
-            <div className="border border-red-600">
-              <h5 className="text-xl">
-                This phrase signifies more than just bricks and mortar. It's a
-                promise of lasting value, safety, and a commitment to using
-                premium materials and skilled craftsmanship. We invest in
-                quality to ensure your peace of mind for years to come.
-              </h5>
-            </div>
+          <div
+            data-aos="fade-up"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+          >
+            <h3 className="text-2xl mb-3">Quality Construction</h3>
+
+            <p className="relative px-6 py-1 text-lg italic text-center text-gray-100 dark:text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+              </svg>
+              This phrase signifies more than just bricks and mortar. It's a
+              promise of lasting value, safety, and a commitment to using
+              premium materials and skilled craftsmanship. We invest in quality
+              to ensure your peace of mind for years to come.
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+              </svg>
+            </p>
           </div>
-          <div className="border border-red-600">
-            <h3 className="text-2xl">Ethical Engineering</h3>
-            <div className="border border-red-600">
-              <h5 className="text-xl">
-                Building a Better Tomorrow.This approach ensures creations
-                prioritize safety, sustainability, and societal well-being.
-                Engineers uphold these values, fostering trust and progress.
-              </h5>
-            </div>
+          <div
+            data-aos="fade-up"
+            className="px-4 py-10 rounded-lg sm:px-8 md:px-12 bg-gray-900 dark:bg-gray-50"
+          >
+            <h3 className="text-2xl mb-3">Ethical Engineering</h3>
+
+            <p className="relative px-6 py-1 text-lg italic text-center text-gray-100 dark:text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
+                <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
+              </svg>
+              Building a Better Tomorrow.This approach ensures creations
+              prioritize safety, sustainability, and societal well-being.
+              Engineers uphold these values, fostering trust and progress.
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="currentColor"
+                className="absolute right-0 w-8 h-8 text-violet-400 dark:text-violet-600"
+              >
+                <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
+                <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
+              </svg>
+            </p>
           </div>
         </div>
       </div>

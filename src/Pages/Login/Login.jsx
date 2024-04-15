@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SocialLogin from "../../Component/SocialLogin/SocialLogin";
@@ -45,7 +45,7 @@ export default function Login() {
         <title>Log in</title>
       </Helmet>
       <div className="w-full flex items-center justify-center">
-        <div className="w-full my-10 max-w-md p-8 border-2 border-red-600 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
+        <div className="w-full my-10 max-w-md p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
           <h1 className="text-2xl font-bold text-center">Login</h1>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -116,6 +116,7 @@ export default function Login() {
             </Link>
           </label>
         </div>
+        <ToastContainer />
       </div>
     </>
   );

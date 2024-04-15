@@ -54,76 +54,84 @@ export default function Register() {
       <Helmet>
         <title>Register</title>
       </Helmet>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="w-full flex items-center justify-center">
+        <div className="w-full my-10 max-w-md p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100"
+            noValidate=""
+            action=""
+            className="space-y-6"
           >
-            <div className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Full Name</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Full name"
-                  className="input input-bordered"
-                  {...register("fullName", { required: true })}
-                />
-                {errors.fullName && (
-                  <span className="text-red-500">This field is required</span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="email"
-                  className="input input-bordered"
-                  {...register("email", { required: true })}
-                />
-                {errors.email && (
-                  <span className="text-red-500">This field is required</span>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Image Url</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="image url"
-                  className="input input-bordered"
-                  {...register("image", { required: true })}
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="password"
-                  className="input input-bordered"
-                  {...register("password", { required: true })}
-                />
-                {errors.password && (
-                  <span className="text-red-500">This field is required</span>
-                )}
-              </div>
-              <div className="form-control mt-6 p-0">
-                <button className="btn btn-neutral">Register</button>
-              </div>
-              <label className="label">
-                Have an account?{" "}
-                <Link to="/login" className="label-text-alt link link-hover">
-                  Please Login
-                </Link>
+            <div className="space-y-1 text-sm">
+              <label htmlFor="fullname" className="block dark:text-gray-600">
+                Full Name
               </label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Full Name"
+                className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                {...register("fullName", { required: true })}
+              />
+              {errors.fullName && (
+                <span className="text-red-500">This field is required</span>
+              )}
             </div>
+            <div className="space-y-1 text-sm">
+              <label htmlFor="email" className="block dark:text-gray-600">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                {...register("email", { required: true })}
+              />
+              {errors.email && (
+                <span className="text-red-500">This field is required</span>
+              )}
+            </div>
+            <div className="space-y-1 text-sm">
+              <label htmlFor="imageurl" className="block dark:text-gray-600">
+                Image Url
+              </label>
+              <input
+                type="imageurl"
+                name="imageurl"
+                id="imageurl"
+                placeholder="Image Url"
+                className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                {...register("image", { required: true })}
+              />
+            </div>
+            <div className="space-y-1 text-sm">
+              <label htmlFor="password" className="block dark:text-gray-600">
+                Password
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                {...register("password", { required: true })}
+              />
+              {errors.password && (
+                <span className="text-red-500">This field is required</span>
+              )}
+            </div>
+            <button className="block w-full p-3 text-center rounded-md dark:text-gray-50 dark:bg-violet-600">
+              Register
+            </button>
+            <label className="label">
+              Have an account?{" "}
+              <Link to="/login" className="label-text-alt link link-hover">
+                Please Login
+              </Link>
+            </label>
           </form>
         </div>
         <ToastContainer />
