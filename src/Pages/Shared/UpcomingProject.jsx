@@ -9,7 +9,7 @@ export default function UpcomingProject({ projects }) {
       </h2>
       <div
         data-aos="fade-up"
-        className="grid grid-cols-1 gap-5 my-10 md:grid-cols-3"
+        className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-3"
       >
         {projects.slice(7, 13).map((project, idx) => (
           <UpcomingProjectCard key={idx} project={project} />

@@ -22,13 +22,13 @@ export default function EstateDetails() {
           src={image}
           className="w-[500px] h-[450px]  rounded-lg shadow-2xl"
         />
-        <div className=" w-[300px] lg:w-[500px] space-y-2">
+        <div className=" w-[300px] lg:w-[500px] md:w-[500px] space-y-2 ">
           <h1 className="text-3xl font-bold">{estate_title}</h1>
           <p className="py-6 text-base font-medium">{description}</p>
           <div className="flex gap-2">
             <strong>Facilities:</strong>
             {facilities.map((item, idx) => (
-              <p className="font-medium" key={idx}>
+              <p className="font-medium " key={idx}>
                 {" "}
                 {item}{" "}
               </p>

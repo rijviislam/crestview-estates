@@ -12,7 +12,7 @@ import image4 from "../../assets/townhouses.jfif";
 
 export default function Slider() {
   return (
-    <div className="absolute lg:top-[18.3rem] top-[14rem] lg:left-[11rem] w-3/4  overflow-hidden ">
+    <div className="absolute lg:top-[18.3rem] top-[14.3rem] lg:left-[11rem] w-3/4  overflow-hidden ">
       <div className="lg:mb-5 mb-2 flex gap-2 flex-col items-start justify-start h-full w-full ">
         <h3 className="text-xl text-white">
           WE MAKE THE ORDINARY...EXTRAORDINARY !

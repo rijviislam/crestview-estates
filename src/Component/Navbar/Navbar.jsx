@@ -90,7 +90,7 @@ export default function Navbar() {
             </div>
             <button
               onClick={signOutUser}
-              className="btn btn-sm border  text-[rgb(41,56,78)]  btn-warning"
+              className="btn btn-sm text-white bg-red-500 border border-red-500"
             >
               Logout
             </button>

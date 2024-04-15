@@ -5,7 +5,6 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 export default function Profile() {
   const { user } = useContext(AuthContext);
-  //   const { email, displayName,  } = user;
   return (
     <div className="flex flex-col items-center justify-center pt-10 pb-5 bg-[#E9E7F7]">
       <Helmet>
@@ -17,7 +16,7 @@ export default function Profile() {
 
       <div
         data-aos="flip-down"
-        className="card w-[350px] lg:w-96 mt-5 bg-base-200 shadow-xl"
+        className="card w-[350px] lg:w-96 md:w-96 mt-5 bg-base-200 shadow-xl"
       >
         <figure className="px-10 pt-10">
           <img

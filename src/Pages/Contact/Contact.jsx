@@ -16,7 +16,7 @@ export default function Contact() {
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="1000"
-          className="bg-base-200  p-5 lg:p-8 w-[350px] lg:w-[500px] rounded-lg"
+          className="bg-base-200  p-5 lg:p-8 w-[350px] lg:w-[500px] md:w-[500px] rounded-lg"
         >
           <h2 className="text-2xl mb-5 text-black ">CORPORATE OFFICE</h2>
           <div className="flex  flex-col gap-4 lg:gap-8">
@@ -57,7 +57,7 @@ export default function Contact() {
           data-aos-anchor="#example-anchor"
           data-aos-offset="500"
           data-aos-duration="1000"
-          className="bg-base-200 w-[350px] lg:w-[500px] p-8 rounded-lg"
+          className="bg-base-200 w-[350px] lg:w-[500px] md:w-[500px] p-8 rounded-lg"
         >
           <h2 className="text-2xl mb-5 text-black">CONNECT WITH US</h2>
           <form className="">

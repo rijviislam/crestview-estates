@@ -1,11 +1,11 @@
 export default function Best() {
   return (
     <>
-      <div className="px-14 bg-[#E9E7F7] flex flex-col gap-10 items-center justify-center">
+      <div className="lg:px-14 bg-[#E9E7F7] flex flex-col gap-10 items-center justify-center">
         <h2 className="text-3xl text-center font-bold text-[rgb(41,56,78)]">
           What Makes Us The Best In Real Estate
         </h2>
-        <div className=" grid gap-3 lg:gap-5 md:gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 place-items-center">
+        <div className=" grid gap-2 lg:gap-5 md:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-10 place-items-center">
           <div
             data-aos="fade-up"
             className="card lg:w-96 w-[350px] lg:h-[400px] h-[350px]  bg-base-200 shadow-xl lg:p-8 p-4"
