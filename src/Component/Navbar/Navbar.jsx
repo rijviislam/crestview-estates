@@ -8,29 +8,39 @@ export default function Navbar() {
   const navLink = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" className="text-[rgb(41,56,78)]">
+          Home
+        </Link>
       </li>
       {user && (
         <>
           <li>
-            <Link to="/projects">Project</Link>
+            <Link className="text-[rgb(41,56,78)]" to="/projects">
+              Project
+            </Link>
           </li>
           <li>
-            <Link to="/updateprofile">Update Profile</Link>
+            <Link className="text-[rgb(41,56,78)]" to="/updateprofile">
+              Update Profile
+            </Link>
           </li>
           <li>
-            <Link to="/profile">Profile</Link>
+            <Link className="text-[rgb(41,56,78)]" to="/profile">
+              Profile
+            </Link>
           </li>
         </>
       )}
 
       <li>
-        <Link to="/contact">Ccontact</Link>
+        <Link className="text-[rgb(41,56,78)]" to="/contact">
+          Contact
+        </Link>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar  px-5 justify-center bg-[#E9E7F7]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -56,8 +66,11 @@ export default function Navbar() {
             {navLink}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">
-          Real Estate
+        <Link
+          to="/"
+          className="text-sm md:text-xl font-bold text-[rgb(41,56,78)] lg:text-xl"
+        >
+          Crestview Estates
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -77,7 +90,7 @@ export default function Navbar() {
             </div>
             <button
               onClick={signOutUser}
-              className="btn btn-sm border border-gray-500 btn-ghost"
+              className="btn btn-sm border bg-[#d5d5d6] text-[rgb(41,56,78)] border-[rgb(41,56,78)]"
             >
               Logout
             </button>

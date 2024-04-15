@@ -28,10 +28,7 @@ export default function UpcomingProjectCard({ project }) {
           <div className="badge badge-secondary">{status}</div>
         </h2>
         <p>{description}</p>
-        <Link
-          to={`/estatedetails/${id}`}
-          className="badge border border-red-600 badge-outline"
-        >
+        <Link to={`/estatedetails/${id}`} className="badge  badge-outline">
           {button_text}
         </Link>
         <div className="card-actions justify-end">

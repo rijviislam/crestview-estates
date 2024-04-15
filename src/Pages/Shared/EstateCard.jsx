@@ -16,7 +16,8 @@ export default function EstateCard({ estate }) {
   return (
     <div
       data-aos="fade-up"
-      className="card w-96 bg-base-100 shadow-xl border border-silver"
+      className="card mx-3 lg:w-96
+       bg-base-100 shadow-xl border border-silver"
     >
       <figure>
         <img src={image} className="w-96 object-cover h-[200px]" alt="Shoes" />

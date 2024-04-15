@@ -10,7 +10,7 @@ export default function Contact() {
         <title>Contact</title>
       </Helmet>
       <h2 className="text-3xl text-black">Contact</h2>
-      <div className="flex gap-10 my-10">
+      <div className="flex flex-col lg:flex-row  gap-10 my-10">
         <div
           data-aos="fade-right"
           data-aos-anchor="#example-anchor"
