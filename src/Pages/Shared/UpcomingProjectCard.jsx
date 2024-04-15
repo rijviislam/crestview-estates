@@ -31,10 +31,10 @@ export default function UpcomingProjectCard({ project }) {
             {button_text}
           </Link>
           <div className="card-actions flex-col justify-end">
-            <div className="badge badge-outline py-3 px-2 bg-teal-500 border-none text-white">
+            <div className="badge badge-outline py-3 px-2 bg-teal-500 border-none text-white text-[10px] lg:text-sm">
               {segment_name}
             </div>
-            <div className="badge badge-outline py-3 px-2 bg-teal-500 border-none text-white">
+            <div className="badge badge-outline py-3 px-2 bg-teal-500 border-none text-white text-[10px] lg:text-sm">
               {location}
             </div>
           </div>

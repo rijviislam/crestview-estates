@@ -33,7 +33,7 @@ export default function EstateCard({ estate }) {
             {button_text}
           </Link>
           <div className="flex gap-2 flex-col">
-            <div className="badge py-3 px-2 badge-secondary">
+            <div className="badge badge-outline py-3 px-2 bg-purple-600 border-none text-white text-[10px] lg:text-sm">
               {segment_name}
             </div>
             <div className="badge py-3 px-2 badge-secondary">{status}</div>
