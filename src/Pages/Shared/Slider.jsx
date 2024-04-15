@@ -12,7 +12,7 @@ import image4 from "../../assets/townhouses.jfif";
 
 export default function Slider() {
   return (
-    <div className="absolute lg:top-[15rem] top-[14rem] lg:left-[11rem] w-3/4  overflow-hidden ">
+    <div className="absolute lg:top-[18.2rem] top-[14rem] lg:left-[11rem] w-3/4  overflow-hidden ">
       <div className="lg:mb-5 mb-2 flex gap-2 flex-col items-start justify-start h-full w-full ">
         <h3 className="text-xl text-white">
           WE MAKE THE ORDINARY...EXTRAORDINARY !
@@ -26,63 +26,63 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="bg-red-500 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="w-[315px] h-[250px] lg:h-[350px]">
             <img src={image4} alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-purple-500 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="w-[315px] h-[250px] lg:h-[350px]">
             <img src={image1} alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-yellow-500 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image2} alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-fuchsia-950 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image3} alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-green-500 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image4} alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-blue-500 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image5} alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-gray-500 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
             <img src={image6} className="" alt="" />
-            <div className=" bg-gray-600 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
+            <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>MAX TOWER</strong>
               <p className="w-full">ROAD NO #28 WARI DHAKA BANGLADESH</p>
             </div>
