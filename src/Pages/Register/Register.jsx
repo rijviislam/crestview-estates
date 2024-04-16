@@ -54,7 +54,9 @@ export default function Register() {
       </Helmet>
       <div className="w-full flex items-center justify-center bg-[#E9E7F7] lg:px-0 px-5">
         <div className="w-full my-10 max-w-md p-8 border-2 border-silver-500 space-y-3 rounded-xl bg-gray-900 dark:bg-gray-50 text-gray-100 dark:text-gray-800">
-          <h1 className="text-2xl font-bold text-center">Register</h1>
+          <h1 className="text-2xl font-bold text-center text-blue-500">
+            Register
+          </h1>
           <form
             onSubmit={handleSubmit(onSubmit)}
             noValidate=""

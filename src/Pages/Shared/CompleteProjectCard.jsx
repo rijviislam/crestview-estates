@@ -20,7 +20,7 @@ export default function CompleteProjectCard({ project }) {
       <div className="card-body">
         <h2 className="card-title">
           {estate_title}
-          <div className="badge badge-secondary">{status}</div>
+          <div className="text-xs badge bg-red-700 text-white">{status}</div>
         </h2>
         <p>{description}</p>
         <div className="flex justify-between mt-3">

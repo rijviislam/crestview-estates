@@ -1,3 +1,4 @@
+import "animate.css";
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -10,7 +11,7 @@ export default function Profile() {
       <Helmet>
         <title>Profile</title>
       </Helmet>
-      <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">
+      <h2 className="text-3xl font-bold text-[rgb(41,56,78)] animate__animated animate__bounce">
         Profile Information
       </h2>
 
@@ -28,7 +29,10 @@ export default function Profile() {
           <h2 className="card-title">{user?.displayName || "unknown user"}</h2>
           <p>{user?.email || "mail not found"}</p>
           <div className="card-actions">
-            <Link to="/updateprofile" className="btn btn-primary">
+            <Link
+              to="/updateprofile"
+              className="btn btn-primary bg-[rgb(41,56,78)]"
+            >
               Update Now
             </Link>
           </div>

@@ -1,3 +1,4 @@
+import "animate.css";
 import { Helmet } from "react-helmet-async";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
@@ -9,7 +10,9 @@ export default function Contact() {
       <Helmet>
         <title>Contact</title>
       </Helmet>
-      <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">Contact</h2>
+      <h2 className="text-3xl font-bold text-[rgb(41,56,78)] animate__animated animate__bounce">
+        Contact
+      </h2>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 my-5 lg:my-10">
         <div
           data-aos="fade-right"

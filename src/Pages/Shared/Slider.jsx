@@ -27,7 +27,7 @@ export default function Slider() {
       onMouseLeave={handleMouseLeave}
       className="absolute lg:top-[18.3rem] top-[14.3rem] lg:left-[11rem] w-3/4  overflow-hidden "
     >
-      <div className="lg:mb-5 mb-2 flex gap-2 flex-col items-start justify-start h-full w-full ">
+      <div className=" lg:mb-5 mb-2 flex gap-2 flex-col items-start justify-start h-full w-full ">
         <h3 className="text-xl text-white">
           WE MAKE THE ORDINARY...EXTRAORDINARY !
         </h3>
@@ -55,7 +55,7 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
+          <div className=" w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image4} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Elliott Bay View</strong>
@@ -64,7 +64,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
+          <div className=" w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image1} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Lofts at Wrightwood</strong>
@@ -73,7 +73,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
+          <div className=" backdrop-sepia w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image2} alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Kōan on South Congress</strong>
@@ -82,7 +82,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
+          <div className=" backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image3} alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Cady Heron</strong>
@@ -91,7 +91,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
+          <div className=" backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image5} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Pacific Tides</strong>
@@ -100,7 +100,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
+          <div className=" backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image6} className="" alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Washington Mews</strong>

@@ -1,3 +1,4 @@
+import "animate.css";
 import { updateProfile } from "firebase/auth";
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
@@ -42,7 +43,7 @@ export default function UpdateProfile() {
       <Helmet>
         <title>Update Profile</title>
       </Helmet>
-      <h2 className="text-3xl font-bold text-[rgb(41,56,78)]">
+      <h2 className="text-3xl font-bold text-[rgb(41,56,78)] animate__animated animate__bounce">
         Update your profile!
       </h2>
       <div data-aos="flip-up" className="min-h-screen ">
