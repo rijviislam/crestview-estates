@@ -12,7 +12,7 @@ export default function Banner() {
           <h2 className="animate__animated animate__bounce lg:text-5xl md:text-5xl text-2xl text-white">
             Crestview Estates
           </h2>
-          <p className="lg:text-2xl  text-white mt-1 lg:mt-3">
+          <p className="lg:text-2xl   text-white mt-1 lg:mt-3">
             Crestview Estates Elevated Living, Panoramic Views, Serene
             Atmosphere
           </p>

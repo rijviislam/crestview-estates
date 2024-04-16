@@ -5,7 +5,7 @@ import UpcomingProjectCard from "./UpcomingProjectCard";
 export default function UpcomingProject({ projects }) {
   return (
     <div className="flex flex-col items-center my-10">
-      <h2 className="text-sm md:text-xl font-bold text-[rgb(41,56,78)] lg:text-3xl animate__animated animate__bounce">
+      <h2 className=" font-bold text-[rgb(41,56,78)] text-3xl animate__animated animate__bounce">
         Upcoming Project
       </h2>
       <div
