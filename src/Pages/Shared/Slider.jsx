@@ -1,7 +1,9 @@
+import { useRef } from "react";
 import "swiper/css";
+import "swiper/css/autoplay";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import image5 from "../../assets/apartment3.jfif";
 import image1 from "../../assets/apartments.jfif";
@@ -11,8 +13,20 @@ import image3 from "../../assets/student-house.jfif";
 import image4 from "../../assets/townhouses.jfif";
 
 export default function Slider() {
+  const swiperRefLocal = useRef();
+
+  const handleMouseEnter = () => {
+    swiperRefLocal?.current?.swiper?.autoplay?.stop();
+  };
+  const handleMouseLeave = () => {
+    swiperRefLocal?.current?.swiper?.autoplay?.start();
+  };
   return (
-    <div className="absolute lg:top-[18.3rem] top-[14.3rem] lg:left-[11rem] w-3/4  overflow-hidden ">
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="absolute lg:top-[18.3rem] top-[14.3rem] lg:left-[11rem] w-3/4  overflow-hidden "
+    >
       <div className="lg:mb-5 mb-2 flex gap-2 flex-col items-start justify-start h-full w-full ">
         <h3 className="text-xl text-white">
           WE MAKE THE ORDINARY...EXTRAORDINARY !
@@ -21,9 +35,7 @@ export default function Slider() {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        ref={swiperRefLocal}
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -38,11 +50,12 @@ export default function Slider() {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
+        modules={[Autoplay]}
+        autoplay={{ delay: 800 }}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-[315px] h-[250px] lg:h-[350px]">
+          <div className="w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image4} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Elliott Bay View</strong>
@@ -51,7 +64,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[315px] h-[250px] lg:h-[350px]">
+          <div className="w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image1} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Lofts at Wrightwood</strong>
@@ -60,7 +73,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image2} alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Kōan on South Congress</strong>
@@ -69,7 +82,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image3} alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Cady Heron</strong>
@@ -78,7 +91,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image5} alt="" />
             <div className="backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Pacific Tides</strong>
@@ -87,7 +100,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px]">
+          <div className="backdrop-sepia bg-white/60 w-[315px] h-[250px] lg:h-[350px] cursor-pointer">
             <img src={image6} className="" alt="" />
             <div className=" backdrop-sepia bg-white/60 p-2 absolute w-[315px] h-[100px] z-10 bottom-0">
               <strong>The Washington Mews</strong>

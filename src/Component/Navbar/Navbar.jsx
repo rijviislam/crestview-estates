@@ -8,24 +8,27 @@ export default function Navbar() {
   const navLink = (
     <>
       <li>
-        <Link to="/" className="text-[rgb(41,56,78)]">
+        <Link to="/" className="text-[rgb(41,56,78)] font-medium">
           Home
         </Link>
       </li>
       {user && (
         <>
           <li>
-            <Link className="text-[rgb(41,56,78)]" to="/projects">
+            <Link className="text-[rgb(41,56,78)] font-medium" to="/projects">
               Project
             </Link>
           </li>
           <li>
-            <Link className="text-[rgb(41,56,78)]" to="/updateprofile">
+            <Link
+              className="text-[rgb(41,56,78)] font-medium"
+              to="/updateprofile"
+            >
               Update Profile
             </Link>
           </li>
           <li>
-            <Link className="text-[rgb(41,56,78)]" to="/profile">
+            <Link className="text-[rgb(41,56,78)] font-medium" to="/profile">
               Profile
             </Link>
           </li>
@@ -33,7 +36,7 @@ export default function Navbar() {
       )}
 
       <li>
-        <Link className="text-[rgb(41,56,78)]" to="/contact">
+        <Link className="text-[rgb(41,56,78)] font-medium" to="/contact">
           Contact
         </Link>
       </li>
@@ -68,7 +71,7 @@ export default function Navbar() {
         </div>
         <Link
           to="/"
-          className="text-sm md:text-xl font-bold text-[rgb(41,56,78)] lg:text-xl"
+          className="text-sm md:text-xl  font-bold text-[rgb(41,56,78)] lg:text-2xl"
         >
           Crestview Estates
         </Link>
