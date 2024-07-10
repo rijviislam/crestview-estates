@@ -37,7 +37,7 @@ These packages and component librarys are used in this project
 - Mamba UI
 
 ## Live Site Link
-https://real-estate-ph-a9.web.app/
+https://real-estate-ph-a9.web.app
 
 
 
